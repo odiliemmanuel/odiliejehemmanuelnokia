@@ -259,9 +259,38 @@ public class NokiaMenu {
                             }
 
 
-           
-                case "5" :
-                    System.out.println("Tones"); break;
+                       
+                            case "5" :
+                                System.out.println("Tones");
+                                String ringingTones = """
+                                 PHONE TONES
+                                1. Ringing tones
+                                2. Ringing volume
+                                3. Incoming call alert
+                                4. Composer
+                                5. Message alert tones
+                                6. Keypad tones
+                                7. Warming and game tones
+                                8. Vibrating alert
+                                9. Screen saver
+                                """;
+
+                            System.out.println(ringingTones);
+                            System.out.println("Enter any number from 1 - 9");
+                            String tonesOptions = input.next();
+
+                                switch(tonesOptions) {
+                                    case "1": System.out.println("Ringing tones"); break;
+                                    case "2": System.out.println("Ringing volume"); break;
+                                    case "3": System.out.println("Incoming call alert"); break;
+                                    case "4": System.out.println("Composer"); break;
+                                    case "5": System.out.println("Message alert tones"); break;
+                                    case "6": System.out.println("Keypad tones"); break;
+                                    case "7": System.out.println("Warming and game tones"); break;
+                                    case "8": System.out.println("Vibrating alert"); break;
+                                    case "9": System.out.println("Screen saver"); break;
+                             }
+                             break;
 
                 case "6" :
                     System.out.println("Settings"); break;
