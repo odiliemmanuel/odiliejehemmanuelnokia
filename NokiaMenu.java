@@ -213,7 +213,7 @@ public class NokiaMenu {
                                                     case "5": System.out.println("Clear timers"); break;
                                                     default: System.out.println("Wrong input");
                                                     }
-                                                     break;
+                                   break;
 
                                 case "6": 
                                         System.out.println("Show call costs");
@@ -235,7 +235,7 @@ public class NokiaMenu {
                                                  default: System.out.println("Wrong input");
 
                                                 }
-                                                break;
+                                       break;
 
                                 case "7": 
                                           System.out.println("Call cost settings");
@@ -256,46 +256,38 @@ public class NokiaMenu {
                                                      }
                                                      break;
                                     case "8": System.out.println("Prepaid credit"); break;
+                            }
 
-             case "5" :
-                System.out.println("Tones"); break;
-            case "6" :
-                System.out.println("Settings"); break;
-            case "7" :
-                System.out.println("Call divert"); break;
-            case "8" :
-                System.out.println("Games"); break;
-             case "9":
-                System.out.println("Calculator"); break;
-            case "10" :
-                System.out.println("Reminders"); break;
-            case "11" :
-                System.out.println("Clock"); break;
-            case "12" :
-                System.out.println("Profiles"); break;
-            case "13" :
-                System.out.println("SIM services"); break;
 
-                default: System.out.println("Wrong input, please select the correct option");
-        
-
-//                            
-//                    case "5": System.out.println("Tones"); break;
-//                    case "6": System.out.println("Settings"); break;
-//                    case "7": System.out.println("Call divert"); break;
-//                    case "8": System.out.println("Games"); break;
-//                    case "9": System.out.println("Calculator"); break;
-//                    case "10": System.out.println("Reminders"); break;
-//                    case "11": System.out.println("Clock"); break;
-//                    case "12": System.out.println("Profiles"); break;
-//                    case "13": System.out.println("SIM services"); break;
-//                          
-                    }}}}
-                
-//}
-//        }       
            
-//      }  
+                case "5" :
+                    System.out.println("Tones"); break;
+
+                case "6" :
+                    System.out.println("Settings"); break;
+                case "7" :
+                    System.out.println("Call divert"); break;
+                case "8" :
+                    System.out.println("Games"); break;
+                 case "9":
+                    System.out.println("Calculator"); break;
+                case "10" :
+                    System.out.println("Reminders"); break;
+                case "11" :
+                    System.out.println("Clock"); break;
+                case "12" :
+                    System.out.println("Profiles"); break;
+                case "13" :
+                    System.out.println("SIM services"); break;
+                              
+                    
+          }
+      }
+}
+                
+
+             
+                   
                                
 
 
