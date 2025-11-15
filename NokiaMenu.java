@@ -293,7 +293,102 @@ public class NokiaMenu {
                              break;
 
                 case "6" :
-                    System.out.println("Settings"); break;
+                    System.out.println("Settings"); 
+                    String phoneControls = """
+                    SETTINGS
+                    1. Call settings
+                    2. Phone settings
+                    3. Security settings
+                    4. Restore factory settings
+                    """;
+
+                        System.out.println(phoneControls);
+                        System.out.println("Enter any number from 1 - 4");
+                        String controlOptions = input.next();
+
+                            switch(controlOptions) {
+                                case "1": 
+                                        System.out.println("Call settings"); 
+                                        String lineSettings = """
+                                        LINE SETTINGS
+                                        1. Automatic redial
+                                        2. Speed dialling
+                                        3. Call waiting options
+                                        4. Own number sending
+                                        5. Phone line in use
+                                        6. Automatic answer
+                                        """;
+                                        
+                                            System.out.println(lineSettings);
+                                            System.out.println("Enter any number from 1 - 6");
+                                            String lineOptions = input.next();
+
+                                                switch(lineOptions) {
+                                                    case "1": System.out.println("Automatic redial"); break;
+                                                    case "2": System.out.println("Speed dialling"); break;
+                                                    case "3": System.out.println("Call waiting options"); break;
+                                                    case "4": System.out.println("Own number sending"); break;
+                                                    case "5": System.out.println("Phone line in use"); break;
+                                                    case "6": System.out.println("Automatic answer"); break;
+                                                }                                 
+                                               break;
+
+                                case "2": 
+                                System.out.println("Phone settings");
+                                String phoneSettings = """
+                                PHONE SETTINGS
+                                1. Language
+                                2. Cell info display
+                                3. Welcome note
+                                4. Network selection
+                                5. Lights
+                                6. Confirm SIM service actions
+                                """;
+            
+                                    System.out.print(phoneSettings);
+                                    System.out.print("Enter any number from 1 6");
+                                    String phoneSettingOptions = input.next();
+
+                                        switch(phoneSettingOptions) {
+                                            case "1": System.out.println("Language"); break;
+                                            case "2": System.out.println("Cell info display"); break;
+                                            case "3": System.out.println("Welcome note"); break;
+                                            case "4": System.out.println("Network selection"); break;
+                                            case "5": System.out.println("Lights"); break;
+                                            case "6": System.out.println("Confirm SIM service actions"); break;
+                                            }
+                                             break;
+                                case "3":
+                                         System.out.println("Security settings"); 
+                                         String securitySettings = """
+                                         SECURITY SETTINGS
+                                         1. PIN code request
+                                         2. Call barring service
+                                         3. Fixed dialling
+                                         4. Closed user group
+                                         5. Phone security
+                                         6. Change access codes
+                                         """;
+
+                                            System.out.println(securitySettings);
+                                            System.out.println("Enter any number from 1 - 6");
+                                            String securitySettingsOptions = input.next();
+
+                                                switch(securitySettingsOptions) {
+                                                    case "1": System.out.println("PIN code request"); break;
+                                                    case "2": System.out.println("Call barring service"); break;
+                                                    case "3": System.out.println("Fixed dialling"); break;
+                                                    case "4": System.out.println("Closed user group"); break;
+                                                    case "5": System.out.println("Phone security"); break;
+                                                    case "6": System.out.println("Change access codes"); break;
+                                               }
+                                               break;
+                                case "4": System.out.println("Restore factory settings"); break;             
+                           }
+                           break;
+
+
+
                 case "7" :
                     System.out.println("Call divert"); break;
                 case "8" :
@@ -302,8 +397,33 @@ public class NokiaMenu {
                     System.out.println("Calculator"); break;
                 case "10" :
                     System.out.println("Reminders"); break;
+
+
                 case "11" :
-                    System.out.println("Clock"); break;
+                           System.out.println("Clock");
+                           String clockSettings = """
+                            CLOCK
+                            1. Alarm clock
+                            2. Clock settings
+                            3. Date setting
+                            4. Stopwatch
+                            5. Countdown timer
+                            6. Auto update of date and time
+                            """;
+
+                                System.out.println(clockSettings);
+                                System.out.println("Enter any number from 1 - 6");
+                                String clockSettingsOptions = input.next();
+
+                                    switch(clockSettingsOptions) {
+                                        case "1": System.out.println("Alarm clock"); break;
+                                        case "2": System.out.println("Clock settings"); break;
+                                        case "3": System.out.println("Date setting"); break;
+                                        case "4": System.out.println("Stopwatch"); break;
+                                        case "5": System.out.println("Countdown timer"); break;
+                                        case "6": System.out.println("Auto update of date and time"); break;
+                                    }
+                                    break;
                 case "12" :
                     System.out.println("Profiles"); break;
                 case "13" :
